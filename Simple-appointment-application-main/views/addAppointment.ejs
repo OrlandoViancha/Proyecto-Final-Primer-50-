@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es  ">
+<head>
+    <%- include('./templates/header')%>
+    <%- include('./templates/navbar')%> 
+</head>
+<body>
+
+    <%- include('./templates/form_citas')%> 
+
+    <%- include('./templates/table_addcita')%> 
+    <%- include('./templates/footer')%>
+    <script>
+        let department= <%- JSON.stringify(department)%>;
+        let datadoctor= <%- JSON.stringify(doctor)%>;
+        let dataschedule= <%- JSON.stringify(schedule)%>
+     </script>
+
+    <script src="/js/script_add.js"></script>
+
+
+</body>
+</html>

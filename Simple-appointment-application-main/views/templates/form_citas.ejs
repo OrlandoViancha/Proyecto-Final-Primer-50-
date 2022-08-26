@@ -1,0 +1,50 @@
+<div class="contenedor">
+    <div class="container-fluid">
+        
+          
+          <form>
+           
+              <legend>
+                
+                  <h2 class="text-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-calendar-minus" viewBox="0 0 16 16">
+                      <path d="M5.5 9.5A.5.5 0 0 1 6 9h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5z"/>
+                      <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                    </svg>
+                    Formulario de Citas</h2>
+                </legend>
+              <div class="row g-3">
+                <div class="col-sm-6">
+
+                    <label for="disabledTextInput" class="form-label">Servicio</label>
+               
+                <select class="form-select" name="department" id= "department"aria-label="Default select example">
+                    <option value="">Seleccione el servicio..</option>
+                   <% department.forEach(value=>{ %>
+
+                    <option value="<%= value._id%>" ><%= value.department%></option>
+
+                    <% })%>
+                  </select>
+                </div>
+                <div class="col-sm-6">
+                <label for="disabledSelect" class="form-label">Doctor</label>
+                <select class="form-select" name="doctor" id="doctor"aria-label="Default select example">
+                    <option value="">Seleccione el doctor..</option>
+                    
+                </select>
+
+
+                </div>
+                
+                
+              </div>
+             
+           
+          </form>
+       
+      </div>
+   
+    
+
+</div>

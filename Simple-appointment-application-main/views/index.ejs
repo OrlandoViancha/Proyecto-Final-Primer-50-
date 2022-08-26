@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang='es'>
+    <head>
+        <%- include('./templates/header')%>
+        
+    </head>
+    <body>
+        <% if(logged){ %>
+            <%- include('./templates/navbar')%> 
+        <% } else{%>
+       
+            <%- include('./templates/navbarlogout')%> 
+        <% }%>
+        <div class="card vh-100">
+            <div class="card-body">
+                <div class="row">
+                    <div class="text-center" >
+                        <h1>
+
+                            <img width="300" height="300"src ="https://pbs.twimg.com/media/CJAnHB8UMAAS1Oq?format=png&name=4096x4096">
+                            Bienvenido a el gestor de citas de nuestras clínicas Talis</h1>
+
+                           
+                        
+                </div>
+                </div class="text-center">
+                <div class="text-center container"style="margin: 0 auto;padding-bottom: 100px">
+                    <h2 style="padding-top: 8rem;padding-bottom: 8rem;">Estos son nuestros servicios</h2>
+                    <div class="row">
+
+                        <div class="col-4 card" >
+                            <img class="card-img-top"src ="https://us.123rf.com/450wm/ponsulak/ponsulak2003/ponsulak200300075/144235025-modelo-dental-y-equipo-dental-sobre-fondo-azul-imagen-de-concepto-de-fondo-dental-antecedentes-de-hi.jpg?ver=6">
+    
+                            <div class="card-body">
+                              <h5 class="card-title">ODONTOLOGIA</h5>
+                             
+                            </div>
+                          </div>
+    
+                          <div class="card col-4" style>
+                            <img class="card-img-top"src ="https://img.freepik.com/foto-gratis/imagen-doctora-profesional-medica-portapapeles-escribiendo-escuchando-paciente-cita-clinica-hospital-pie-sobre-fondo-turquesa_1258-85618.jpg?w=2000">
+    
+                            <div class="card-body">
+                              <h5 class="card-title">MEDICINA</h5>
+                             
+                            </div>
+                          </div>
+                          <div class="card col-4" style>
+                            <img height=230 class="card-img-top"src ="https://s1.eestatic.com/2019/01/18/actualidad/actualidad_369475125_112625461_1024x576.jpg">
+    
+                            <div class="card-body">
+                              <h5 class="card-title">PSICOLOGIA</h5>
+                             
+                            </div>
+                          </div>
+
+
+                    </div>
+                   
+
+                </div>
+               
+            </div>
+        </div>
+        <%- include('./templates/footer')%>
+    </body>
+</html>
